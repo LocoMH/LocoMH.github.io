@@ -6,22 +6,63 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="css/devicons.css">
+
+
     <meta name="viewport" content="width=device-width, initial-scale=0.6">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
 </head>
     <body>
         <div id="app">
-            <v-app dark>
-                    <v-app-bar>
-                        <v-spacer></v-spacer>
-                        Welcome
-                        <v-spacer></v-spacer>
-                    </v-app-bar>
-                    <v-main>
-                        <v-container fluid>
-                            Welcome to my page!
-                        </v-container>
+            <v-app>
+                <v-app-bar app>
+                    <v-spacer></v-spacer>
+                    <h3 class="font-weight-regular">
+                        LocoMH's github page
+                    </h3>
+                    <v-spacer></v-spacer>
+                    <v-switch
+                        v-model="$vuetify.theme.dark"
+                        dense
+                        hide-details
+                    >
+                        <template v-slot:label>
+                            <v-icon>mdi-moon-waxing-crescent</v-icon>
+                        </template>
+                    </v-switch>
+                </v-app-bar>
+                <v-main>
+                    <v-container fluid>
+                        Hi, I'm glad you made your way to my little website. My name is Till, I'm 31 years old and primarily a python developer from near Frankfurt, Germany. My nick name on the web is LocoMH.
+                    </v-container>
+                    <v-divider></v-divider>
+                    <v-container fluid>
+                        <h3>Projects</h3>
+                        <h4>Taskmaster Suite</h4>
+                        The Taskmaster Suite allows you to play the famous TV show Taskmaster at home by controlling an audience screen running on one device from an assistant screen running on another device in the same network.  
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/LocoMH/TaskmasterSuite#readme">Find out all about it here.</a>
+                    </v-container>
+                    <v-divider></v-divider>
+                    <v-container fluid>
+                        <h3>Knowledge</h3>
+                        <p>
+                            It always seems hard to express how proficient you are at something so broad like Python, HTML or really anything IT related. You can always learn more and you can never know enough. Therefore I'm simply listing those programming languages, frameworks and tools which I have worked a significant amount of time with. I wouldn't call myself an expert in any of them, yet I know my way around. They are listed alphabetically.
+                        </p>
+                        <i class="devicons devicon-confluence-plain-wordmark colored"></i>
+                        <i class="devicons devicon-css3-plain-wordmark colored"></i>
+                        <i class="devicons devicon-docker-plain-wordmark colored"></i>
+                        <i class="devicons devicon-html5-plain-wordmark colored"></i>
+                        <i class="devicons devicon-javascript-plain colored"></i>
+                        <i class="devicons devicon-jira-plain-wordmark colored"></i>
+                        <i class="devicons devicon-jquery-plain-wordmark colored"></i>
+                        <i class="devicons devicon-mongodb-plain-wordmark colored"></i>
+                        <i class="devicons devicon-mysql-plain-wordmark colored"></i>
+                        <i class="devicons devicon-python-plain-wordmark colored"></i>
+                        <i class="devicons devicon-vscode-plain-wordmark colored"></i>
+                        <i class="devicons devicon-vuejs-plain-wordmark colored"></i>
+                    </v-container>
                 </v-main>
             </v-app>
         </div>
