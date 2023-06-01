@@ -1,3 +1,7 @@
 .devicons {
   font-size: 3rem;
 }
+
+.checked {
+  color: orange;
+}
